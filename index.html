@@ -1,0 +1,83 @@
+<style>
+.x{float:left;margin:2px;color:white;border:5px groove white;
+width:80px;font-size:10px;
+}
+.y{border:5px groove cornflowerblue;width:250px;position:absolute;top:0px;}
+</style>
+<body bgcolor=#555>
+<div style="float:left;border:10px groove #333;height:30px;width:100%;">
+
+<p class=y style="left:50px">
+<input id="ipt_1" type=text style="height:100%">
+<button id="btn_1" style="height:100%" onClick="#">convert</button></p>
+
+<p class=y style="left:350px">
+<input id="ipt_2" type=text style="height:100%">
+<button id="btn_2" style="height:100%" onClick="#">convert</button></p>
+
+<p class=y style="left:650px">
+<input id="ipt_3" type=text style="height:100%">
+<button id="btn_3" style="height:100%" onClick="#">convert</button>
+</p>
+
+
+</div><hr color=black width="100%">
+<div id="div_0" style="border:10px groove #444;height:100000px;width:100%;">
+</div>
+
+</body>
+
+<script>
+var ipt_1=document.getElementById("ipt_1");
+var ipt_3=document.getElementById("ipt_2");
+var ipt_3=document.getElementById("ipt_3");
+var btn_1=document.getElementById("btn_1");
+var btn_2=document.getElementById("btn_2");
+var btn_3=document.getElementById("btn_3");
+function func_a(){btn_1.style=`height:100%;background-color:${ipt_1.value}`;}
+function func_b(){btn_2.style=`height:100%;background-color:${ipt_2.value}`;}
+function func_c(){btn_3.style=`height:100%;background-color:${ipt_3.value}`;}
+btn_1.onclick=func_a;
+btn_2.onclick=func_b;
+btn_3.onclick=func_c;
+
+var div_0=document.getElementById("div_0");
+var r=0,g=0,b=0;
+
+function func1(){div_0.innerHTML+=`<p style="background-color:rgb(${r},${g},${b});" class=x>rgb(${r},${g},${b})`;r+=1;}
+function func2(){div_0.innerHTML+=`<p style="background-color:rgb(${r},${g},${b});" class=x>rgb(${r},${g},${b})`;g+=1;}
+function func3(){div_0.innerHTML+=`<p style="background-color:rgb(${r},${g},${b});" class=x>rgb(${r},${g},${b})`;b+=1;}
+
+
+timer1=setInterval(function(){
+	func1();if(r>255)clearInterval(timer1);
+	timer2=setInterval(function(){
+		func2();if(g>255)g=0;
+		timer3=setInterval(function(){
+			func3();if(b>255)b=0;
+			},0)
+		},0)
+	},0)
+	
+	
+	
+</script>){
+			func3();if(b>255)b=0;
+			},0)
+		},0)
+	},0)
+	
+	
+	
+</script>
+	
+</script>>();if(b>255)b=0;
+			},0)
+		},0)
+	},0)
+	
+	
+	
+</script>
+	
+</script>>
